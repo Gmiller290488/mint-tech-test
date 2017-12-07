@@ -32,9 +32,11 @@ function showResults(names, desc, urls) {
    $("#results").html(item);
       
    $('[data-target]').click( function (e) {
+     
      var target = $($(this).attr('data-target'));
      target.load($(this).attr('href'));
      e.preventDefault(); // prevent anchor from changing window.location
+   $('#results-container').addClass('results-container-white');
        });
        };
 

@@ -31,6 +31,22 @@ body {
   margin: 100px;
     }
 
+#toc, img, .thumbcaption, .mw-editsection, .reference, .noprint, .mw-jump, #See_also, .reflist, #References, .sistersitebox, .external text, #External_links, .navbox, #mw-navigation, .gallery, #Images {
+  display: none;
+ } 
+
+.results-container-white {
+ background-color: white;
+ text-align: left;
+ pointer-events: none;
+ color: black;
+ padding: 10px;
+ }
+ 
+a {
+ color: black;
+ }
+
 #searchbar {
   width: 50%;
   text-align: center;
