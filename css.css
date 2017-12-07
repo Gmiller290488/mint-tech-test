@@ -12,9 +12,9 @@
 	}
 
 body {
-  height:auto;
+  height: 100%; 
   width: 100%;
-  background: #8fb9fc;
+  background-color: #8fb9fc;
      }
 				     
 .search-area {
