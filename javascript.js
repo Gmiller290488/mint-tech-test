@@ -28,6 +28,7 @@ function showResults(names, desc, urls, val) {
    $("#results").html(item);
       
    $('[data-target]').click( function (e) {
+     window.scrollTo(0, 0);
      $('#result-div').addClass('hide'); 
      var target = $($(this).attr('data-target'));
      target.load($(this).attr('href'));
@@ -40,6 +41,7 @@ function showResults(names, desc, urls, val) {
 
 
    $('#backbtn').click( function (e) { 
+      window.scrollTo(0,0); 
       $('#results').removeClass('results-container-white');
       $('#result-div').removeClass('hide');    
       $('#backbtn').removeClass('backbtn-show');
