@@ -3,7 +3,7 @@
   width: 100%;
       }	
 
-.heading-hide  {
+.hide  {
   display: none;
   }
 
@@ -20,9 +20,15 @@ body {
      }
 				     
 .search-area-top {
-  margin: 5px;
+  margin: 0px 5px 5px 5px;
   text-align: center;
-  padding: 5px;
+  padding: 0px 5px 5px 5px;
+  top: 0;
+  opacity: 0.9;
+  height: 50px;
+  width: 100%;
+  z-index: 9999;
+  position: fixed;
   }
 
 .search-area {
@@ -35,7 +41,12 @@ body {
   display: none;
  } 
 
+#results-container {
+ padding-top:110px;
+ }
+
 .results-container-white {
+ padding-top:50px;
  background-color: white;
  text-align: left;
  pointer-events: none;
