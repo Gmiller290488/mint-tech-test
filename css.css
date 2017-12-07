@@ -2,7 +2,11 @@
   background: #8fb9fc;
   height: auto;
   width: 100%;
-      }
+      }	
+
+.heading-hide  {
+  display: none;
+  }
 
 .shadow {
   color: #002f7c;
@@ -17,6 +21,13 @@ body {
   background-color: #8fb9fc;
      }
 				     
+.search-area-top {
+  margin: 5px;
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  }
+
 .search-area {
   text-align: center;
   padding: 20px;

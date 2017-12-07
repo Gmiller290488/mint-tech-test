@@ -1,6 +1,10 @@
 
 function doSearch() {
    var val = $("#searchbar").val();
+   $('.heading').addClass('heading-hide');
+   $('.search-br').addClass('heading-hide');
+   $('.search-area').addClass('search-area-top');
+   $('.search-area').removeClass('search-area');
    if (val.length == 0) {
        window.location.href = "https://en.wikipedia.org/wiki/Special:Random";
        return;
