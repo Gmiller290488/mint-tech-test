@@ -1,7 +1,6 @@
 
 function doSearch() {
    var val = $("#searchbar").val();
-   console.log("hello");
    if (val.length == 0) {
        window.location.href = "https://en.wikipedia.org/wiki/Special:Random";
        return;
