@@ -24,14 +24,20 @@ function showResults(names, desc, urls) {
        item += "<div class=\"well animated fadeIn\">";
        item += "<strong>"+ names[i] +": </strong>";
        item += "<p>" + desc[i] + "</p>";
-       item += "<a href=\"" + urls[i] + "\"";
+       item += "<a data-target=\"#results-container\" href=\"" + urls[i] + "\"";
        item += "<i class=\"fa fa-external-link\" aria-hidden=\"true\"></i>";
        item += "</a>";
        item += "</div>";
         }
    $("#results").html(item);
-    };  
-  
+      
+   $('[data-target]').click( function (e) {
+     var target = $($(this).attr('data-target'));
+     target.load($(this).attr('href'));
+     e.preventDefault(); // prevent anchor from changing window.location
+       });
+       };
+
 $(document).ready(function(){
   $(document).keypress(function(e) {
      if(e.which == 13) {
