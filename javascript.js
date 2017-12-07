@@ -37,6 +37,9 @@ function showResults(names, desc, urls) {
      target.load($(this).attr('href'));
      e.preventDefault(); // prevent anchor from changing window.location
    $('#results-container').addClass('results-container-white');
+   $('#backbtn').addClass('backbtn-show');
+   $('#backbtn').removeClass('backbtn');
+
        });
        };
 

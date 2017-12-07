@@ -64,6 +64,20 @@ a {
   margin: 0 auto;
  }
 
+#backbtn {
+  width: 10%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.backbtn-show {
+  display: block;
+  }
+
+.backbtn {
+  display: none;
+  }
+
 #results {
   width: 50%;
   position: relative;
