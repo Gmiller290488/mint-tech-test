@@ -3,7 +3,6 @@ $(document).ready(function(){
    var teams = ['Arsenal', 'Tottenham Hotspur', 'Burnley', 'Watford', 'Leicester City', 'Everton', 'Southampton', 'Brighton & Hove Albion', 'Stoke', 'Bournemouth', 'Newcastle United', 'Huddersfield', 'West Bromwich Albion', 'Crystal Palace', 'West Ham United', 'Swansea', 'Chelsea', 'Liverpool', 'Manchester City', 'Manchester United'];
    var results;
    var wikiurlstart = "https://en.wikipedia.org/wiki/";
-   var wikiurlend = "_fc";
 
 function autocomplete(val) {
    var team_return = [];
@@ -25,9 +24,9 @@ input.onkeyup = function(e) {
       teams_to_show = autocomplete(input_val);
       for (i = 0; i < teams_to_show.length; i++) {
 	      if (teams_to_show[i] === 'Bournemouth') {
-		      teams_to_show_url[i] = 'A.F.C._Bournemouth';}
-         else {
-          teams_to_show_url[i]= (teams_to_show[i].split(' ').join('_')) + '_F.C.';
+	         teams_to_show_url[i] = 'A.F.C._Bournemouth';}
+              else {
+                 teams_to_show_url[i]= (teams_to_show[i].split(' ').join('_')) + '_F.C.';
 	 }
 	  autocomplete_results.innerHTML += '<li class="link"><a data-target=\"#results\" href=' + wikiurlstart + teams_to_show_url[i] + '>' + teams_to_show[i] + '</a></li>';
       }
@@ -49,7 +48,6 @@ input.onkeyup = function(e) {
      teams_to_show_url = [];
      autocomplete_results.innerHTML = '';
    }
-}
-
-      });
+ }
+});
  
