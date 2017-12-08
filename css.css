@@ -7,13 +7,6 @@
   display: none;
   }
 
-.shadow {
-  color: #002f7c;
-  background-color: #8fb9fc;
-  letter-spacing: .1em;
-  text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636;
-	}
-
 body {
   width: 100%;
   background-color: #8fb9fc;
@@ -35,12 +28,13 @@ body {
   text-align: center;
   padding: 20px;
   margin: 100px;
+  position: relative;
     }
 
-#toc, img, .thumbcaption, .mw-editsection, .reference, .noprint, .mw-jump, #See_also, .reflist, #References, .sistersitebox, .external text, #External_links, .navbox, #mw-navigation, .gallery, #Images {
+.toccolours, #toc, img, .thumbcaption, .mw-editsection, .reference, .noprint, .mw-jump, #See_also, .reflist, #References, .sistersitebox, .external text, #External_links, .navbox, #mw-navigation, .gallery, #Images {
   display: none;
  } 
-
+ 
 #results-container {
  padding-top:110px;
  }
@@ -58,14 +52,19 @@ a {
  color: black;
  }
 
-#searchbar {
+#searchbar, #autocomplete-results {
   width: 50%;
   text-align: center;
   position: relative;
   display: block;
   margin: 0 auto;
-  border: 12px;
+  border: 0px, 12px, 12px, 12px;
   border: solid;
+  }
+
+
+li {
+  list-style: none;
   }
 
 #searchbtn {
@@ -75,20 +74,6 @@ a {
   margin: 0 auto;
  }
 
-#backbtn {
-  width: 10%;
-  position: relative;
-  margin: 0 auto;
-}
-
-.backbtn-show {
-  display: block;
-  }
-
-.backbtn {
-  display: none;
-  }
-
 #results {
   width: 50%;
   position: relative;
@@ -96,38 +81,3 @@ a {
   margin: 0 auto;
   }
 
-@media screen and (max-width: 1020px) {
-  body, .container-fluid {
-     float: none;
-     width: auto;
-     }
-  #searchbar {
-     width: 100%;
-     text-align: center;
-     position: relative;
-     display: block;
-     margin: 0 auto;
-     border: 12px;
-     border: solid;
-      }
-
-  #searchbtn {
-     width: 50%;
-     position: relative;
-     display: block;
-     margin: 0 auto;
-      }
-
-  #results {
-     width: 100%;
-     position: relative;
-     display: block;
-     margin: 0 auto;
-     }
-
-  .search-area {
-     text-align: center;
-     padding: 20px;
-     margin: 20px;
-     }
-  }
